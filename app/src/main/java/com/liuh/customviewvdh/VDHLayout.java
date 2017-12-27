@@ -12,6 +12,11 @@ import android.widget.LinearLayout;
 /**
  * Date: 2017/12/27 10:16
  * Description:自定义View之ViewDragHelper学习
+ * 当我们想在某一种布局(比如:LinearLayout)中可以拖拽其子控件时,我们可以自建一个ViewGroup,继承已知布局(比如:LinearLayout)
+ * 在其内部定义一个ViewDragHelper类型的成员变量,在构造方法中对其进行初始化,并重写其回调方法
+ *
+ * 重写所继承布局的onInterceptTouchEvent(...)和onTouchEvent(...)
+ *
  */
 
 public class VDHLayout extends LinearLayout {
